@@ -1,4 +1,4 @@
-/*C++ program to calculate area of circle*/
+//*C++ program to calculate area of circle*//
 #include <iostream>
 using namespace std;
 #define PI 3.14
