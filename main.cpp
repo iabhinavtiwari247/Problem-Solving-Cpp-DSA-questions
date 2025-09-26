@@ -1,25 +1,27 @@
-//* cpp qs 2 *//
-/* [Enter cost of 3 items from user (using float data type) , {Items = a pen,a pencil , an eraser } 
-You have to output the total cost of the items back to the user as the bill. 
-Add on : You Can also try adding 18% GST tax to the items in the bill. ]*/
+/*cpp-que3*/
+/* Build a simple interest calculator*/
 #include <iostream>
 using namespace std;
 int main() {
-    float pen, pencil, eraser;
-    cout << "Enter the cost of a pen: ";
-    cin >> pen;
-    cout << "Enter the cost of a pencil: ";
-    cin >> pencil;
-    cout << "Enter the cost of an eraser: ";
-    cin >> eraser;
+    double principal, rate, time, interest;
 
-    float totalCost = pen + pencil + eraser;
-    float gst = totalCost * 0.18; // 18% GST
-    float totalBill = totalCost + gst;
+    // Input principal amount
+    cout << "Enter the principal amount: ";
+    cin >> principal;
 
-    cout << "Total cost of items: " << totalCost << endl;
-    cout << "GST (18%): " << gst << endl;
-    cout << "Total bill (including GST): " << totalBill << endl;
+    // Input rate of interest
+    cout << "Enter the rate of interest (in %): ";
+    cin >> rate;
+
+    // Input time period in years
+    cout << "Enter the time period (in years): ";
+    cin >> time;
+
+    // Calculate simple interest
+    interest = (principal * rate * time) / 100;
+
+    // Output the result
+    cout << "The simple interest is: " << interest << endl;
 
     return 0;
 }
